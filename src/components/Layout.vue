@@ -198,6 +198,13 @@ watch(() => route.params.id, (newId) => {
     /* ... */
 
     color: var(--el-text-color-primary);
+  
+}
+
+@media (max-width: 560px) {
+    .el-aside {
+        width: 150px;
+    }
 }
 
 
