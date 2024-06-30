@@ -52,14 +52,15 @@
                             <el-menu-item index="3-2" @click="navigateTo(10)">
                                 CSS Tricks
                             </el-menu-item>
-                         
+                            <el-menu-item index="3-1">Option 1</el-menu-item>
+                            <el-menu-item index="3-2">Option 2</el-menu-item>
                         </el-menu-item-group>
                         <el-menu-item-group title="Vue3UICollection">
-                         
+                            <el-menu-item index="3-3">Option 3</el-menu-item>
                         </el-menu-item-group>
 
                         <el-menu-item-group title="ReactUICollection">
-                          
+                            <el-menu-item index="3-3">Option 3</el-menu-item>
                         </el-menu-item-group>
 
                         <el-menu-item-group title="Javascript">
@@ -110,13 +111,12 @@
 
             <el-main>
 
-             
 
                 <router-view v-if="websitesStore.currentWebsite">
                     <iframe :src="websitesStore.currentWebsite.url" width="100%" height="100%" >
                     </iframe>
                 </router-view>
-                <router-view v-else/>
+                
             </el-main>
         </el-container>
     </el-container>
@@ -203,10 +203,12 @@ watch(() => route.params.id, (newId) => {
 .layout_header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
     align-items: center;
     position: relative;
+    right: 5px
 }
+
 
 :root {
 
@@ -231,12 +233,20 @@ watch(() => route.params.id, (newId) => {
 }
 
 .item_sidebar .el-icon {
-    position: relative;
-    left: 0;
+    position: absolute;
+    left: 10px;
     width: 100px;
     height: 50px
 }
+.item_darkmode{
+    position: absolute;
+    right:10px
+}
 
+.item_user{
+    position: absolute;
+    left:45%
+}
 
 iframe{
     border: 1px solid black;
