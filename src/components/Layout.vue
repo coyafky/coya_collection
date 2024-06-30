@@ -79,6 +79,8 @@
                             <el-menu-item index="3-12" @click="navigateTo(25)">Javascript 进阶</el-menu-item>
                             <el-menu-item index="3-13" @click="navigateTo(29)">深入理解TypeScript</el-menu-item>
                            
+                            <el-menu-item index="3-14" @click="navigateTo(32)">前端面试题</el-menu-item>
+                           
 
                         </el-menu-item-group>
 

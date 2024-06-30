@@ -134,6 +134,12 @@ export const useWebsitesStore = defineStore("websites", {
         url: "https://xiaolincoding.com/os/",
         name: "计算机操作系统",
       }
+      ,
+      {
+        id: 32,
+        url: "https://www.yuque.com/cuggz/interview",
+        name: "前端面试题",
+      }
 
       // 添加更多网站
     ],
