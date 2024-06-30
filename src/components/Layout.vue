@@ -5,15 +5,15 @@
                 <el-menu :default-openeds="['1', '3']">
                     <el-sub-menu index="1">
                         <template #title>
-                            <el-icon>
-                                <message />
-                            </el-icon>
+                         
                             Coya的工作集合
                         </template>
                         <el-menu-item-group>
                             <template #title>常用的网站</template>
-                            <el-menu-item index="1-1" @click="navigateTo(1)">AlgoVisual</el-menu-item>
+                            <el-menu-item index="1-1" @click="navigateTo(1)">Vue</el-menu-item>
                             <el-menu-item index="1-2" @click="navigateTo(2)">Leetcode</el-menu-item>
+                            <el-menu-item index="1-3" @click="navigateTo(17)">React</el-menu-item>
+                            <el-menu-item index="1-4" @click="navigateTo(18)">webSkill</el-menu-item>
                         </el-menu-item-group>
                         <el-menu-item-group title="CoyaWebsite">
                             <el-menu-item index="1-3" @click="navigateTo(4)">
@@ -30,19 +30,18 @@
                     </el-sub-menu>
                     <el-sub-menu index="2">
                         <template #title>
-                            <el-icon><icon-menu /></el-icon>AI Bot Webiste
+                           AI Bot Webiste
                         </template>
                         <el-menu-item-group>
                             <el-menu-item index="2-1" @click="navigateTo(6)">deepseekchat</el-menu-item>
                             <el-menu-item index="2-2" @click="navigateTo(7)">Coze</el-menu-item>
+                            <el-menu-item index="2-3" @click="navigateTo(30)">数据结构和算法</el-menu-item>
                         </el-menu-item-group>
 
                     </el-sub-menu>
                     <el-sub-menu index="3">
                         <template #title>
-                            <el-icon>
-                                <setting />
-                            </el-icon>分类集合
+                            分类集合
                         </template>
                         <el-menu-item-group>
                             <template #title>CSS</template>
@@ -52,24 +51,39 @@
                             <el-menu-item index="3-2" @click="navigateTo(10)">
                                 CSS Tricks
                             </el-menu-item>
-                            <el-menu-item index="3-1">Option 1</el-menu-item>
-                            <el-menu-item index="3-2">Option 2</el-menu-item>
-                        </el-menu-item-group>
-                        <el-menu-item-group title="Vue3UICollection">
-                            <el-menu-item index="3-3">Option 3</el-menu-item>
-                        </el-menu-item-group>
 
-                        <el-menu-item-group title="ReactUICollection">
-                            <el-menu-item index="3-3">Option 3</el-menu-item>
-                        </el-menu-item-group>
+                            <el-menu-item index="3-3" @click="navigateTo(19)">
+                                CSS Gradient
+                            </el-menu-item>
+                            <el-menu-item index="3-4" @click="navigateTo(20)">
+                                webdev
+                            </el-menu-item>
+                            <el-menu-item index="3-5" @click="navigateTo(21)">
+                                CSSGuidebook
+                            </el-menu-item>
+                            <el-menu-item index="3-6" @click="navigateTo(22)">
+                                pintTree
+                            </el-menu-item>
+                            <el-menu-item index="3-7" @click="navigateTo(23)">
+                                CSS技术笔记
+                            </el-menu-item>
 
+                        </el-menu-item-group>
                         <el-menu-item-group title="Javascript">
-                            <el-menu-item index="3-7" @click="navigateTo(14)">
+                            <el-menu-item index="3-8" @click="navigateTo(14)">
                                 Javascript editer
                             </el-menu-item>
-                            <el-menu-item index="3-3" @click="navigateTo(15)">现代javascript教程</el-menu-item>
-                            <el-menu-item index="3-3">Morden_javascript</el-menu-item>
+                            <el-menu-item index="3-9" @click="navigateTo(15)">现代javascript教程</el-menu-item>
+                            <el-menu-item index="3-10" @click="navigateTo(24)">现代ECMAScript 6</el-menu-item>
+                            <el-menu-item index="3-11" @click="navigateTo(26)">Javascripttutorial</el-menu-item>
+                            <el-menu-item index="3-12" @click="navigateTo(25)">Javascript 进阶</el-menu-item>
+                            <el-menu-item index="3-13" @click="navigateTo(29)">深入理解TypeScript</el-menu-item>
+                           
+
                         </el-menu-item-group>
+
+                    
+
 
                     </el-sub-menu>
                     <el-sub-menu index="4">
@@ -81,6 +95,23 @@
                         <el-menu-item index="4-3" @click="navigateTo(13)">PlantUml</el-menu-item>
                         <el-menu-item index="4-4" @click="navigateTo(16)">quickReference</el-menu-item>
                     </el-sub-menu>
+                    <el-sub-menu index="5">
+                        <template #title>
+                            Vue_UI
+                        </template>
+                        <el-menu-item index="5-1" @click="navigateTo(27)">Vant UI</el-menu-item>
+                        <el-menu-item index="5-2" @click="navigateTo(28)">shadcn-vue</el-menu-item>
+                        <el-menu-item index="5-2" @click="navigateTo(30)">shadcn-vue</el-menu-item>
+                       
+                    </el-sub-menu>
+                    <el-sub-menu index="6">
+                        <template #title>
+                            计算机基础
+                        </template>
+                        <el-menu-item index="6-1" @click="navigateTo(30)">计算机网络</el-menu-item>
+                        <el-menu-item index="6-2" @click="navigateTo(31)">计算机操作系统</el-menu-item>
+                       
+                    </el-sub-menu>
                 </el-menu>
 
             </el-scrollbar>
@@ -90,7 +121,9 @@
             <el-header class="layout_header" style="text-align: left ;  ">
                 <el-breadcrumb separator="/">
                     <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-                    <el-breadcrumb-item v-if="currentWebsite" :to="{path:`/embed/${currentWebsite.id}`}">{{ currentWebsite.name }}</el-breadcrumb-item>
+                    <el-breadcrumb-item v-if="currentWebsite" :to="{ path: `/embed/${currentWebsite.id}` }">{{
+        currentWebsite.name
+    }}</el-breadcrumb-item>
                 </el-breadcrumb>
                 <div class="item_sidebar">
                     <el-icon @click="toggleSidebar">
@@ -113,10 +146,10 @@
 
 
                 <router-view v-if="websitesStore.currentWebsite">
-                    <iframe :src="websitesStore.currentWebsite.url" width="100%" height="100%" >
+                    <iframe :src="websitesStore.currentWebsite.url" width="100%" height="100%">
                     </iframe>
                 </router-view>
-                
+
             </el-main>
         </el-container>
     </el-container>
@@ -159,7 +192,6 @@ watch(() => route.params.id, (newId) => {
 </script>
 
 <style scoped>
-
 .el-aside {
     /* ... */
 
@@ -187,7 +219,8 @@ watch(() => route.params.id, (newId) => {
     height: auto;
 
 }
-.elmain{
+
+.elmain {
     width: 100vh;
     height: 100vh;
 }
@@ -203,7 +236,7 @@ watch(() => route.params.id, (newId) => {
 .layout_header {
     display: flex;
     flex-direction: row;
-    
+
     align-items: center;
     position: relative;
     right: 5px
@@ -224,12 +257,12 @@ watch(() => route.params.id, (newId) => {
 
 
 .item_sidebar {
- 
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 .item_sidebar .el-icon {
@@ -238,17 +271,18 @@ watch(() => route.params.id, (newId) => {
     width: 100px;
     height: 50px
 }
-.item_darkmode{
+
+.item_darkmode {
     position: absolute;
-    right:10px
+    right: 10px
 }
 
-.item_user{
+.item_user {
     position: absolute;
-    left:45%
+    left: 45%
 }
 
-iframe{
+iframe {
     border: 1px solid black;
     border-radius: 2%;
 }
