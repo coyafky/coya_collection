@@ -96,6 +96,8 @@
                         <el-menu-item index="4-2" @click="navigateTo(12)">mermaid</el-menu-item>
                         <el-menu-item index="4-3" @click="navigateTo(13)">PlantUml</el-menu-item>
                         <el-menu-item index="4-4" @click="navigateTo(16)">quickReference</el-menu-item>
+                        <el-menu-item index="4-5" @click="navigateTo(32)">debug_In_chrome</el-menu-item>
+                        <el-menu-item index="4-6" @click="navigateTo(33)">图书查找网站</el-menu-item>
                     </el-sub-menu>
                     <el-sub-menu index="5">
                         <template #title>
@@ -103,7 +105,7 @@
                         </template>
                         <el-menu-item index="5-1" @click="navigateTo(27)">Vant UI</el-menu-item>
                         <el-menu-item index="5-2" @click="navigateTo(28)">shadcn-vue</el-menu-item>
-                        <el-menu-item index="5-2" @click="navigateTo(30)">shadcn-vue</el-menu-item>
+                   
                        
                     </el-sub-menu>
                     <el-sub-menu index="6">

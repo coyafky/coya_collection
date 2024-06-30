@@ -140,6 +140,18 @@ export const useWebsitesStore = defineStore("websites", {
         url: "https://www.yuque.com/cuggz/interview",
         name: "前端面试题",
       }
+      ,
+      {
+        id: 33,
+        url: "https://strong-sphynx-b8d.notion.site/Chrome-a9664feaa5784b2b977f9617b4becda2?pvs=25",
+        name: "degugskill in chrome",
+
+      },
+      {
+        id: 34,
+        url: "https://annas-archive.org//",
+        name: "Annas Archive",
+      }
 
       // 添加更多网站
     ],
